@@ -45,6 +45,25 @@ importers:
         specifier: ^3.2.0
         version: 3.5.13(typescript@5.8.3)
 
+  playground:
+    dependencies:
+      vue:
+        specifier: ^3.2.0
+        version: 3.5.13(typescript@5.8.3)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^4.5.0
+        version: 4.6.2(vite@4.5.14(@types/node@22.15.17))(vue@3.5.13(typescript@5.8.3))
+      typescript:
+        specifier: ^5.2.0
+        version: 5.8.3
+      vite:
+        specifier: ^4.5.0
+        version: 4.5.14(@types/node@22.15.17)
+      vue-tsc:
+        specifier: ^0.29.8
+        version: 0.29.8(typescript@5.8.3)
+
 packages:
 
   '@algolia/autocomplete-core@1.17.7':

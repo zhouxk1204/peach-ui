@@ -17,6 +17,7 @@
   "scripts": {
     "dev": "vitepress dev packages/docs",
     "doc:dev": "pnpm --filter docs run docs:dev",
+    "playground:dev": "pnpm --filter playground run dev",
     "build": "vitepress build packages/docs",
     "start": "vite dev",
     "build:lib": "tsc --build tsconfig.json"
