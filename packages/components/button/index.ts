@@ -1,3 +1,5 @@
+import './src/style.css'
+
 import { SFCWithInstall, withInstall } from '../../utils/with-install'
 
 import Button from './src/Button.vue';
