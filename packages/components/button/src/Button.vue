@@ -1,24 +1,17 @@
 <template>
-  <button class="peach-button"><slot></slot></button>
+  <button :class="`p-button p-button--${type}`" :disabled="disabled">
+    <slot></slot>
+  </button>
 </template>
 
 <script lang="ts" setup>
+import { buttonTypes } from './types';
+
 defineOptions({
   name: 'PButton',
 })
+defineProps<{
+  type?: buttonTypes;
+  disabled?: boolean;
+}>();
 </script>
-
-<style scoped>
-.peach-button {
-  padding: 10px 20px;
-  background-color: #ff9b9b;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-}
-
-.peach-button:hover {
-  background-color: #ff7a7a;
-}
-</style>

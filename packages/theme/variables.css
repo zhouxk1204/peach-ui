@@ -1,0 +1,121 @@
+:root {
+  /* 默认（浅色）主题 */
+
+  /* 桃子淡粉色主色 */
+  --peach-primary: #f8c8d1; /* 桃子淡粉色 */
+  --peach-primary-hover: #f39cb2; /* hover 状态颜色 */
+  --peach-primary-active: #f08e9b; /* active 状态颜色 */
+  --peach-primary-bg: var(--peach-primary);  /* 背景色 */
+  --peach-primary-text: #fff;  /* 文字色 */
+  
+  /* 背景色 */
+  --peach-bg: #ffffff;  /* 浅色主题背景 */
+  --peach-bg-muted: #f3f4f6;  /* 浅背景色 */
+  
+  /* 文本颜色 */
+  --peach-text: #333;  /* 亮色文字 */
+  --peach-text-muted: #b1b1b1;  /* 辅助文本色 */
+  
+  /* 按钮色 */
+  --peach-primary-bg: var(--peach-primary); /* 按钮背景色 */
+  --peach-primary-text: #fff; /* 按钮文字色 */
+  
+  /* 成功状态色 */
+  --peach-success: #22c55e; /* 成功颜色 */
+  --peach-success-hover: #16a34a; /* hover 状态颜色 */
+  --peach-success-active: #15803d; /* active 状态颜色 */
+  --peach-success-bg: var(--peach-success);
+  --peach-success-text: #fff;
+  
+  /* 信息状态色 */
+  --peach-info: #3b82f6; /* 信息颜色 */
+  --peach-info-hover: #2563eb; /* hover 状态颜色 */
+  --peach-info-active: #1d4ed8; /* active 状态颜色 */
+  --peach-info-bg: var(--peach-info);
+  --peach-info-text: #fff;
+  
+  /* 警告状态色 */
+  --peach-warning: #f59e0b; /* 警告颜色 */
+  --peach-warning-hover: #d97706; /* hover 状态颜色 */
+  --peach-warning-active: #b45309; /* active 状态颜色 */
+  --peach-warning-bg: var(--peach-warning);
+  --peach-warning-text: #fff;
+
+  /* 危险状态色 */
+  --peach-danger: #ef4444; /* 危险颜色 */
+  --peach-danger-hover: #dc2626; /* hover 状态颜色 */
+  --peach-danger-active: #b91c1c; /* active 状态颜色 */
+  --peach-danger-bg: var(--peach-danger);
+  --peach-danger-text: #fff;
+  
+  /* 在特定背景下的文字颜色 */
+  --peach-text-on-primary: #fff; /* primary 背景上的文字颜色 */
+  --peach-text-on-success: #fff; /* success 背景上的文字颜色 */
+  --peach-text-on-info: #fff; /* info 背景上的文字颜色 */
+  --peach-text-on-warning: #fff; /* warning 背景上的文字颜色 */
+  --peach-text-on-danger: #fff; /* danger 背景上的文字颜色 */
+  
+  /* 禁用状态 */
+  --peach-disabled-bg: #444; /* 禁用按钮的背景颜色 */
+  --peach-disabled-text: #666; /* 禁用按钮的文字颜色 */
+  
+  /* 边框 */
+  --peach-border-radius: 4px; /* 默认圆角 */
+  --peach-border: 1px solid #e0e0e0; /* 默认边框 */
+}
+
+/* 当 class 为 'dark' 时，使用暗黑主题 */
+.dark {
+  --peach-bg: #181818;  /* 暗黑主题背景 */
+  --peach-bg-muted: #2a2a2a;  /* 暗背景色 */
+  
+  --peach-text: #f0f0f0;  /* 亮色文字 */
+  --peach-text-muted: #b1b1b1;  /* 辅助文本色 */
+  
+  /* 按钮色 */
+  --peach-primary-bg: var(--peach-primary); /* 按钮背景色 */
+  --peach-primary-text: #fff; /* 按钮文字色 */
+  
+  /* 成功状态色 */
+  --peach-success: #16a34a; /* 成功颜色 */
+  --peach-success-hover: #15803d; /* hover 状态颜色 */
+  --peach-success-active: #0f4b1c; /* active 状态颜色 */
+  --peach-success-bg: var(--peach-success);
+  --peach-success-text: #fff;
+  
+  /* 信息状态色 */
+  --peach-info: #3b82f6; /* 信息颜色 */
+  --peach-info-hover: #2563eb; /* hover 状态颜色 */
+  --peach-info-active: #1d4ed8; /* active 状态颜色 */
+  --peach-info-bg: var(--peach-info);
+  --peach-info-text: #fff;
+  
+  /* 警告状态色 */
+  --peach-warning: #f59e0b; /* 警告颜色 */
+  --peach-warning-hover: #d97706; /* hover 状态颜色 */
+  --peach-warning-active: #b45309; /* active 状态颜色 */
+  --peach-warning-bg: var(--peach-warning);
+  --peach-warning-text: #fff;
+
+  /* 危险状态色 */
+  --peach-danger: #ef4444; /* 危险颜色 */
+  --peach-danger-hover: #dc2626; /* hover 状态颜色 */
+  --peach-danger-active: #b91c1c; /* active 状态颜色 */
+  --peach-danger-bg: var(--peach-danger);
+  --peach-danger-text: #fff;
+  
+  /* 在特定背景下的文字颜色 */
+  --peach-text-on-primary: #fff; /* primary 背景上的文字颜色 */
+  --peach-text-on-success: #fff; /* success 背景上的文字颜色 */
+  --peach-text-on-info: #fff; /* info 背景上的文字颜色 */
+  --peach-text-on-warning: #fff; /* warning 背景上的文字颜色 */
+  --peach-text-on-danger: #fff; /* danger 背景上的文字颜色 */
+  
+  /* 禁用状态 */
+  --peach-disabled-bg: #444; /* 禁用按钮的背景颜色 */
+  --peach-disabled-text: #666; /* 禁用按钮的文字颜色 */
+  
+  /* 边框 */
+  --peach-border-radius: 4px; /* 默认圆角 */
+  --peach-border: 1px solid #333; /* 默认边框 */
+}
