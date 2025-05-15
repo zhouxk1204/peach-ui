@@ -2,7 +2,7 @@
  * 主题配置类型，用于定义 UI 组件库中的各种主题样式。
  * 每个字段的配置项都可以用来动态更改页面的主题。
  */
-interface ThemeConfig {
+export interface ThemeConfig {
   /**
    * 主色，通常用于按钮、链接等重要元素的背景色。
    * @example '#f8c8d1' (淡粉色)

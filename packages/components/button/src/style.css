@@ -3,17 +3,18 @@
   border: none;
   border-radius: 4px;
   font-size: 14px;
-  background-color: var(--p-color-primary);
-  color: #fff;
+  background-color: var(--p-primary-bg);
+  color: var(--p-primary-text);;
   transition: background-color 0.3s;
 }
 
 .p-button:hover {
-  background-color: var(--p-color-hover);
+  background-color: var(--p-primary-hover);
+  cursor: pointer;
 }
 
 .p-button:active {
-  background-color: var(--p-color-active);
+  background-color: var(--p-primary-active);
 }
 
 .p-button[disabled] {

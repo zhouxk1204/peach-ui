@@ -1,9 +1,8 @@
 import './src/style.css'
 
-import { SFCWithInstall, withInstall } from '../../utils/with-install'
-
 import Button from './src/Button.vue';
+import { withInstall } from '../../utils/with-install'
 
-export const PButton: SFCWithInstall<typeof Button> = withInstall(Button)
+export const PButton = withInstall(Button)
 
 export default PButton

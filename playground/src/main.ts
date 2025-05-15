@@ -1,6 +1,7 @@
-import { createApp } from 'vue'
+import 'peach-ui/dist/style.css'
+
 import App from './App.vue'
+import { createApp } from 'vue'
+import { updateTheme } from 'peach-ui'
 
-import PeachUI from 'peach-ui'
-
-createApp(App).use(PeachUI).mount('#app')
+createApp(App).mount('#app')

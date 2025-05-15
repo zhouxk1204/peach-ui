@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "outDir": "dist",
+    "emitDeclarationOnly": false,
+    "baseUrl": ".",
+    "paths": {
+      "@peach-ui/theme": ["../theme"],
+      "@peach-ui/components": ["../components"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "index.ts"
+  ],
+  "exclude": ["node_modules", "dist", "../utils"]
+}

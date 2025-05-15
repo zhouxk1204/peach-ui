@@ -1,11 +1,12 @@
 import { DEFAULT_COLORS } from './constants';
+import { ThemeConfig } from './types'; // 👈 必须加上这个！
 import { shadeColor } from './utils';
 
 /**
  * 更新主题的函数，通过修改 CSS 变量实现动态主题。
  * @param config 自定义的主题配置
  */
-export function updateTheme(config: ThemeConfig) {
+export const updateTheme = (config: ThemeConfig) => {
   // 提取配置
   const {
     primaryColor = DEFAULT_COLORS.primaryColor, 
@@ -40,36 +41,36 @@ export function updateTheme(config: ThemeConfig) {
   const dangerActive = shadeColor(dangerColor, -20);
 
   // 更新 CSS 变量
-  document.documentElement.style.setProperty('--peach-primary', primaryColor);
-  document.documentElement.style.setProperty('--peach-primary-hover', primaryHover);
-  document.documentElement.style.setProperty('--peach-primary-active', primaryActive);
+  document.documentElement.style.setProperty('--p-primary', primaryColor);
+  document.documentElement.style.setProperty('--p-primary-hover', primaryHover);
+  document.documentElement.style.setProperty('--p-primary-active', primaryActive);
 
-  document.documentElement.style.setProperty('--peach-success', successColor);
-  document.documentElement.style.setProperty('--peach-success-hover', successHover);
-  document.documentElement.style.setProperty('--peach-success-active', successActive);
+  document.documentElement.style.setProperty('--p-success', successColor);
+  document.documentElement.style.setProperty('--p-success-hover', successHover);
+  document.documentElement.style.setProperty('--p-success-active', successActive);
 
-  document.documentElement.style.setProperty('--peach-info', infoColor);
-  document.documentElement.style.setProperty('--peach-info-hover', infoHover);
-  document.documentElement.style.setProperty('--peach-info-active', infoActive);
+  document.documentElement.style.setProperty('--p-info', infoColor);
+  document.documentElement.style.setProperty('--p-info-hover', infoHover);
+  document.documentElement.style.setProperty('--p-info-active', infoActive);
 
-  document.documentElement.style.setProperty('--peach-warning', warningColor);
-  document.documentElement.style.setProperty('--peach-warning-hover', warningHover);
-  document.documentElement.style.setProperty('--peach-warning-active', warningActive);
+  document.documentElement.style.setProperty('--p-warning', warningColor);
+  document.documentElement.style.setProperty('--p-warning-hover', warningHover);
+  document.documentElement.style.setProperty('--p-warning-active', warningActive);
 
-  document.documentElement.style.setProperty('--peach-danger', dangerColor);
-  document.documentElement.style.setProperty('--peach-danger-hover', dangerHover);
-  document.documentElement.style.setProperty('--peach-danger-active', dangerActive);
+  document.documentElement.style.setProperty('--p-danger', dangerColor);
+  document.documentElement.style.setProperty('--p-danger-hover', dangerHover);
+  document.documentElement.style.setProperty('--p-danger-active', dangerActive);
 
   // 更新其他状态色
-  document.documentElement.style.setProperty('--peach-text', textColor);
-  document.documentElement.style.setProperty('--peach-bg', backgroundColor);
-  document.documentElement.style.setProperty('--peach-bg-muted', mutedBackgroundColor);
+  document.documentElement.style.setProperty('--p-text', textColor);
+  document.documentElement.style.setProperty('--p-bg', backgroundColor);
+  document.documentElement.style.setProperty('--p-bg-muted', mutedBackgroundColor);
 
   // 更新禁用状态颜色
-  document.documentElement.style.setProperty('--peach-disabled-bg', disabledBackgroundColor);
-  document.documentElement.style.setProperty('--peach-disabled-text', disabledTextColor);
+  document.documentElement.style.setProperty('--p-disabled-bg', disabledBackgroundColor);
+  document.documentElement.style.setProperty('--p-disabled-text', disabledTextColor);
 
   // 更新边框、圆角等
-  document.documentElement.style.setProperty('--peach-border-radius', borderRadius);
-  document.documentElement.style.setProperty('--peach-border', borderColor);
+  document.documentElement.style.setProperty('--p-border-radius', borderRadius);
+  document.documentElement.style.setProperty('--p-border', borderColor);
 }
