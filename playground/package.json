@@ -5,7 +5,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "peach-ui": "link:../packages/peach-ui",
+    "peach-design": "link:../packages/peach-design",
     "vue": "^3.4.0"
   },
   "devDependencies": {

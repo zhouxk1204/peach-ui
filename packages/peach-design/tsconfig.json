@@ -7,10 +7,6 @@
     "outDir": "dist",
     "emitDeclarationOnly": false,
     "baseUrl": ".",
-    "paths": {
-      "@peach-ui/theme": ["../theme"],
-      "@peach-ui/components": ["../components"]
-    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
